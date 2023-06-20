@@ -1,13 +1,60 @@
 :root {
     /* color */
-    --white-color:#FFF
-    --black-color:#140A00
-    --blue-color:
-    --red-color:#ff0000
-    --grey-dark-color: #272727
+    --white-color:#FFF;
+    --black-color:#140A00;
+    --blue-color:#045fd4;
+    --red-color:#ff0000;
+    --grey-dark-color: #272727;
+    --grey-light-color: #e0e0e0;
+
     /*Size */
 
-    /*Font Size*/
+    --padding : 12px;
+    --avartar-size :36px;
 
+
+    /*Font Size*/
+    --font-large : 18px;
+    --font-medium : 14px;
+    --font-small : 12px;
+    --font-micro: 10px;
+}
+
+* {
+    padding:0;
+    margin : 0;
+    box-sizing : border-box;
+}
+
+body {
+    font-family: Roboto;
+}
+header {
+    display:flex;
+    justify-content: space-between;
+    padding: var(--padding);
+    background-color: var(--black-color);
+    color : var(--white-color);
+
+}
+
+header .logo i{
+    color: var(--red-color);
+
+
+}
+header .logo{
+
+    font-size:var(--font-large);
+
+}
+header .icons .fa-search {
+    margin-right : var(--padding);
+}
+
+.player video{
+    width :  100%;
+    height :  100%;
+    max-width: 1000px;
 
 }
