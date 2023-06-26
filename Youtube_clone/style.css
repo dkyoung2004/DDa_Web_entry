@@ -36,7 +36,6 @@ ul {
 
 button,
 button:focus{
-
     border: none;
     cursor: pointer;
     outline: none;
@@ -120,3 +119,73 @@ Video info
     font-size: var(--font-small);
     color:var(--grey-dark-color);
 }
+.actions{
+    display: flex;
+    justify-content: space-around;
+    margin: var(--font-small);
+}
+.actions button{
+
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-small);
+}
+.actions button i{
+    margin-bottom: calc(var(--padding) / 2);
+    margin: 0 auto;
+    font-size: 16px;
+    color: var(--grey-dark-color);
+}
+.actions button i:active{
+    color : var(--blue-color);
+
+
+}
+/* 
+channel description
+*/
+
+.channel {
+
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--grey-light-color);
+    border-bottom: 1px solid var(--grey-light-color);
+
+}
+
+.channel .metadata{
+
+    display: flex;
+    align-items: center;
+
+}
+.channel .metadata img{
+
+    width: var(--avartar-size);
+    height: var(--avartar-size);
+    border-radius: 50%;
+}
+
+.channel .metadata .info{
+
+    display: flex;
+    flex-direction: column;
+}
+.channel .metadata .info .name{
+
+    font-size: var(--font-medium);
+}
+.channel .metadata .info .subscribers{
+
+    font-size: var(--font-small);
+    color: var(--grey-dark-color);
+}
+
+.channel .subscribe {
+    text-transform: uppercase;
+    color: var(--red-color);
+    font-size : var(--font-medium)
+}
+
+/* up next */
